@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Background color -->
+    <corners android:topLeftRadius="20dp" android:topRightRadius="20dp" /> <!-- Rounded corners for the top-left and top-right corners -->
+    <gradient
+        android:type="linear"
+        android:startX="107.5"
+        android:startY="417"
+        android:endX="322.5"
+        android:endY="417"
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:gradientRadius="0"
+        android:startColor="#E48514"
+        android:endColor="#E2C10F"
+        android:angle="90"
+        android:centerColor="#E2C10F"
+        android:useLevel="false"
+        android:tileMode="clamp"/>
+</shape>

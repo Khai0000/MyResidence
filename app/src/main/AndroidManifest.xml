@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GoogleMap"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Pages.Signup"
+            android:exported="false" />
+
+        <activity
+            android:name=".Pages.Login"
+            android:exported="false" />
+        <activity
+            android:name=".Pages.LoadingPage"
+            android:exported="false" />
+
+        <activity
+            android:name=".Pages.UpdateProfile"
+            android:exported="false" />
+
+        <activity
+            android:name=".Pages.Home"
+            android:exported="false" />
+
+        <activity
+            android:name=".Fragments.ProfilePageFragment"
+            android:exported="false" />
+
+        <activity
+            android:name=".Fragments.MyMapFragment"
+            android:exported="false" />
+
+        <activity
+            android:name=".Pages.UploadPost"
+            android:exported="false" />
+
+        <activity
+            android:name=".Pages.EditProfilePage"
+            android:exported="false" />
+
+        <activity
+            android:name=".Pages.ForgotPassword"
+            android:exported="false" />
+
+        <activity
+            android:name=".Pages.PostDetails"
+            android:exported="false" />
+
+        <activity
+            android:name=".Pages.AboutUs"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Fragments.EmergencyLocationSearchFragment"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".EmergencyLocationRecyclerView.EmergencyLocationDetails"
+            android:exported="false" />
+
+        <activity android:name=".Pages.ViewProfilePage"
+            android:exported="false"/>
+
+        <activity android:name=".Chatroom.ChatRoom"
+            android:exported="false">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".Pages.Sos"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Pages.PrivacySettings"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Pages.GuideActivity"
+            android:exported="false">
+        </activity>
+
+        <meta-data
+            android:name="MAPS_API_KEY"
+            android:value="${MAPS_API_KEY}"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2d2d">
+
+    <TextView
+        android:id="@+id/message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messages"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/recent_chat_search_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+         />
+
+    <Button
+        android:id="@+id/refresh_chat_button"
+        android:layout_width="20dp"
+        android:layout_height="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/message_title"
+        app:layout_constraintBottom_toBottomOf="@id/message_title"
+        app:backgroundTint="@null"
+        android:background="@drawable/recent_chat_refresh_icon"
+        app:layout_constraintHorizontal_bias="0.905"
+
+        />
+
+
+    <EditText
+        android:id="@+id/recent_chat_search_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/recent_chat_search_background"
+        android:drawableEnd="@drawable/recent_chat_search_icon"
+        android:hint="Search"
+        android:lines="1"
+        android:padding="16dp"
+        android:textColor="#D3D3D3"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message_title"
+        app:layout_constraintWidth_percent="0.9"
+        android:drawablePadding="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recent_chat_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/chat_message_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recent_chat_search_input"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <TextView
+        android:id="@+id/result_text_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recent_chat_search_input"
+        android:text="No recent chats..."
+        android:textSize="30dp"
+        android:textColor="#D3D3D3"
+        android:visibility="invisible"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="signup_login_style">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#FFF6F6</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">10</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">#2d2d2d</item> <!-- Set the background color -->
+        <item name="android:textColorPrimary">@color/white</item> <!-- Set text color to white -->
+        <item name="android:editTextColor">@color/white</item> <!-- Set text color to white -->
+        <item name="android:windowTitleStyle">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">24sp</item> <!-- Set title text size to 24sp -->
+        <item name="android:textColor">@color/white</item> <!-- Set title text color to white -->
+    </style>
+
+    <style name="circularImage">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="dialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="NoBorderTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundMode">none</item>
+    </style>
+
+    <style name="navigationTextStyle">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="FullScreenDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2d2d2d">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.36"
+        android:background="@drawable/update_profile_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/update_profile_gradientbackground"
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/go_back_button"
+        android:layout_width="27sp"
+        android:layout_height="27sp"
+        android:background="@drawable/upload_goback_icon"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintHorizontal_bias="0.035"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline1"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        android:text="Name : "
+        android:textColor="#B0BEC5"
+        app:layout_constraintHorizontal_bias="0.08"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B0BEC5"
+        app:hintTextColor="#B0BEC5"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@id/blood_type_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline1"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:boxStrokeWidth="0dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameInputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:enabled="false"
+            android:textColor="#B0BEC5"
+            android:textSize="15sp"
+            android:maxLines="2"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:dividerColor="#B0BEC5"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:layout_constraintWidth_percent="0.9"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46" />
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        android:text="Email : "
+        android:textColor="#B0BEC5"
+        app:layout_constraintHorizontal_bias="0.08"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B0BEC5"
+        app:hintTextColor="#B0BEC5"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@id/blood_type_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        app:boxStrokeWidth="0dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailInputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="qwoeiuqieuxzcnmwndmqwnde2pewoeoii@gmail.com qweoiwqjeoiio"
+            android:maxHeight="60dp"
+            android:background="@null"
+            android:textColor="#B0BEC5"
+            android:lines="2"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:dividerColor="#B0BEC5"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        app:layout_constraintWidth_percent="0.9"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <TextView
+        android:id="@+id/address_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline3"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        android:text="Address : "
+        android:textColor="#B0BEC5"
+        app:layout_constraintHorizontal_bias="0.08"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B0BEC5"
+        app:hintTextColor="#B0BEC5"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@id/blood_type_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline3"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:boxStrokeWidth="0dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addressInputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="#B0BEC5"
+            android:lines="4"
+            android:text="qwoeiuqwoieu90 1238102398\n qwoeiqwieouqie\nqwoeiuqwioeuqwioueqwoeiuqwoeuqioweuqwioueqwoieuqioweuioqwueqwoeiuqioweuqwoeiuqwioue"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:dividerColor="#B0BEC5"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintWidth_percent="0.9"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <TextView
+        android:id="@+id/contact_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        android:text="Contact : "
+        android:textColor="#B0BEC5"
+        app:layout_constraintHorizontal_bias="0.08"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B0BEC5"
+        app:hintTextColor="#B0BEC5"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@id/blood_type_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:boxStrokeWidth="0dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contactInputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="phone"
+            android:textColor="#B0BEC5"
+            android:lines="1"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:dividerColor="#B0BEC5"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintWidth_percent="0.9"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <TextView
+        android:id="@+id/blood_type_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline5"
+        app:layout_constraintBottom_toTopOf="@id/guideline6"
+        android:text="Blood Type : "
+        android:textColor="#B0BEC5"
+        app:layout_constraintHorizontal_bias="0.08"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B0BEC5"
+        app:hintTextColor="#B0BEC5"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@id/blood_type_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline5"
+        app:layout_constraintBottom_toTopOf="@id/guideline6"
+        app:boxStrokeWidth="0dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bloodTypeInputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="textCapCharacters"
+            android:digits="ABO"
+            android:textColor="#B0BEC5"
+            android:lines="1"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:dividerColor="#B0BEC5"
+        app:layout_constraintBottom_toTopOf="@id/guideline6"
+        app:layout_constraintWidth_percent="0.9"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <Button
+        android:id="@+id/chat_button"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/chat_icon"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:textColor="#E48514"
+        android:visibility="invisible"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:id="@+id/edit_profile_button"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="30dp"
+        android:maxWidth="30dp"
+        android:textColor="#E48514"
+        app:backgroundTint="@null"
+        android:background="@drawable/edit_profile_icon"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/chat_disabled_button"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/chat_disabled_icon"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:textColor="#E48514"
+        android:visibility="invisible"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

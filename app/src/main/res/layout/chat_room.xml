@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2d2d">
+
+    <RelativeLayout
+        android:id="@+id/chat_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="20dp"
+        >
+
+        <Button xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/go_back_button"
+            android:layout_width="27sp"
+            android:layout_height="21dp"
+            android:background="@drawable/upload_goback_icon"
+            android:layout_centerVertical="true"
+            app:backgroundTint="@null" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_image_holder"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circular_image"
+            android:layout_alignParentTop="true"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="0dp"
+            android:layout_toRightOf="@id/go_back_button"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/username_text_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/user_image_holder"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/chat_header_layout"
+        android:id="@+id/divider"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/send_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        >
+        <EditText
+            android:id="@+id/message_input"
+            android:elevation="10dp"
+            android:shadowColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="16dp"
+            android:textColor="#F8F8F8"
+            android:hint="Type something..."
+            android:drawablePadding="20dp"
+            android:textColorHint="#F8F8F8"
+            android:lines="2"
+            android:background="@drawable/chat_background_border"
+            android:drawableEnd="@drawable/send_icon"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress_indicator"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:progressTint="#E48514"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:indeterminateTint="#E48514"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_message_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/divider"
+        android:layout_above="@id/send_message_layout"
+        android:layout_marginBottom="20px"
+        />
+
+
+</RelativeLayout>

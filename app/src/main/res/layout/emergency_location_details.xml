@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2d2d"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2d2d2d"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/emergency_location_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="top"
+                android:background="@drawable/update_profile_gradientbackground"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Location Details"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/go_back_button"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_alignParentTop="true"
+                app:backgroundTint="@null"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@drawable/upload_goback_icon"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="16dp"
+                />
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/location_navigation_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="end"
+            app:backgroundTint="@null"
+            android:background="@drawable/image_button_background"
+            android:src="@drawable/location_direction_icon"
+            android:scaleType="fitXY"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="-30dp"
+            />
+
+        <TextView
+            android:id="@+id/location_name_text_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:progressTint="#E48514"
+                />
+
+            <TextView
+                android:id="@+id/total_user_review_text_holder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textColor="#B3B3B3"
+                android:textAlignment="viewEnd"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/location_address_text_holder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/distance_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/distance_text_holder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location_open_status_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/operating_hours_text_holder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#4CAF50"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

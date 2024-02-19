@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GoogleMap</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="signup_description">Have an account already? Swipe Down now and \ncontinue your safe journey!</string>
+    <string name="login_description">New here? Welcome to join us! Swipe Up now and \ncontribute to a safer world.</string>
+
+    <string-array name="category_items">
+        <item>Select a category here</item>
+        <item>FireHazard</item>
+        <item>Accident</item>
+        <item>Burglar</item>
+        <item>GunShot</item>
+    </string-array>
+
+    <string-array name="emergency_location_categories">
+        <item>Select a type of location</item>
+        <item>hospital</item>
+        <item>police</item>
+        <item>fire_station</item>
+    </string-array>
+</resources>

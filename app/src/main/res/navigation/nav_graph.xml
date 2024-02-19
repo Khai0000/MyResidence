@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.googlemap.Fragments.MyMapFragment"
+        android:label="MapFragment" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/emergencyFragment"-->
+<!--        android:name="com.example.googlemap.Fragments.EmergencyFragment"-->
+<!--        android:label="EmergencyFragment" />-->
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.googlemap.Fragments.ProfilePageFragment"
+        android:label="ProfileFragment" />
+
+    <!-- Add actions to navigate between fragments -->
+</navigation>

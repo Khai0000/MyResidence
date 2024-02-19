@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2d2d">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/sos_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2d2d2d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/sos_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/upload_goback_icon"
+            app:title="SOS Call" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/current_location_text_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location"
+        android:textColor="#E48514"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/current_location_input_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sos_app_bar"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/current_location_input_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sos_location_background"
+        android:drawableStart="@drawable/sos_location_icon"
+        android:drawablePadding="20dp"
+        android:enabled="false"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        android:textColor="#F3F3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_location_text_holder"
+        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintWidth_percent="0.835" />
+
+
+    <ImageView
+        android:id="@+id/pulse_animation_image_view1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/sos_pulse_background"
+        android:text="SOS"
+        android:textColor="#F3F3F3"
+        android:textSize="30sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_location_input_text"
+        app:layout_constraintVertical_bias="0.4" />
+
+
+    <ImageView
+        android:id="@+id/pulse_animation_image_view2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/sos_pulse_background"
+        android:text="SOS"
+        android:textColor="#F3F3F3"
+        android:textSize="30sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_location_input_text"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/sos_button"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/sos_button_background"
+        android:text="SOS"
+        android:textColor="#F3F3F3"
+        android:textSize="30sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_location_input_text"
+        app:layout_constraintVertical_bias="0.4" />
+
+
+    <TextView
+        android:id="@+id/button_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Press and drag the button for emergency calls"
+        android:textAlignment="center"
+        android:textColor="#F2F2F2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sos_button"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintWidth_percent="0.835" />
+
+    <Button
+        android:id="@+id/police_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/police_icon"
+        android:textColor="#F3F3F3"
+        android:visibility="invisible"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@id/sos_button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sos_button" />
+
+    <Button
+        android:id="@+id/ambulance_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ambulance_icon"
+        android:textColor="#F3F3F3"
+        android:visibility="invisible"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@id/sos_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fire_fighters_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/fire_fighters_icon"
+        android:textColor="#F3F3F3"
+        android:visibility="invisible"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@id/sos_button"
+        app:layout_constraintTop_toTopOf="@id/sos_button" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/arrow_animation_right_image_view"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:src="@drawable/sos_arrow_animation"
+        android:visibility="invisible"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_location_input_text"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/arrow_animation_left_image_view"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:rotation="180"
+        android:src="@drawable/sos_arrow_animation"
+        android:visibility="invisible"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_location_input_text"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/arrow_animation_top_image_view"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:rotation="270"
+        android:src="@drawable/sos_arrow_animation"
+        android:visibility="invisible"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_location_input_text"
+        app:layout_constraintVertical_bias="0.318" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

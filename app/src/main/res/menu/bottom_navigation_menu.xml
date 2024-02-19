@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title=""
+        android:id="@+id/emergency_page"
+        android:icon="@drawable/emergency_icon"
+        />
+    <item
+        android:title=""
+        android:id="@+id/emergency_location_page"
+        android:icon="@drawable/bottom_navigation_search_icon"/>
+    <item
+        android:title=""
+        android:id="@+id/map_page"
+        android:icon="@drawable/map_icon"/>
+    <item
+        android:title=""
+        android:id="@+id/recent_chat_page"
+        android:icon="@drawable/recent_chat_icon"/>
+    <item
+        android:title=""
+        android:id="@+id/profile_page"
+        android:icon="@drawable/profile_icon"/>
+</menu>

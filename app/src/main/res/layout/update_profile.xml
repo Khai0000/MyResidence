@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2d2d2d">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.36"
+        android:background="@drawable/update_profile_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/update_profile_gradientbackground"
+        android:text="Update Profile"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:id="@+id/upload_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@null"
+        android:paddingHorizontal="50sp"
+        android:background="@drawable/upload_image_button"
+        android:text="Upload your profile image"
+        android:textColor="#757575"
+        android:textSize="13sp"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/profile_image"
+        app:layout_constraintBottom_toBottomOf="@id/profile_image"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B0BEC5"
+        app:hintTextColor="#B0BEC5"
+        android:paddingTop="5dp"
+        android:paddingHorizontal="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline1"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameInputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="60dp"
+            android:background="@drawable/update_profile_input_border"
+            android:hint="Name"
+            android:textColor="#B0BEC5"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B0BEC5"
+        app:hintTextColor="#B0BEC5"
+        android:paddingTop="5dp"
+        android:paddingHorizontal="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailInputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="60dp"
+            android:background="@drawable/update_profile_input_border"
+            android:hint="Email"
+            android:textColor="#B0BEC5"
+            android:lines="1"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="50dp"
+        android:textColorHint="#B0BEC5"
+        app:hintTextColor="#B0BEC5"
+        android:paddingTop="5dp"
+        android:paddingHorizontal="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="100"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline3"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addressInputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="70dp"
+            android:background="@drawable/update_profile_input_border"
+            android:hint="Address"
+            android:textColor="#B0BEC5"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.665" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B0BEC5"
+        app:hintTextColor="#B0BEC5"
+        android:paddingTop="5dp"
+        android:paddingHorizontal="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contactInputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="60dp"
+            android:background="@drawable/update_profile_input_border"
+            android:hint="Contact"
+            android:inputType="phone"
+            android:textColor="#B0BEC5"
+            android:lines="1"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B0BEC5"
+        app:hintTextColor="#B0BEC5"
+        android:paddingTop="5dp"
+        android:paddingHorizontal="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="2"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline5"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bloodTypeInputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="60dp"
+            android:background="@drawable/update_profile_input_border"
+            android:hint="Blood Type"
+            android:inputType="textCapCharacters"
+            android:digits="ABO"
+            android:textColor="#B0BEC5"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.855" />
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E48514"
+        android:textSize="20sp"
+        app:backgroundTint="@null"
+        android:background="@drawable/round_button"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:paddingHorizontal="20dp"
+        android:text="Confirm"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline6"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

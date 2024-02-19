@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/upload_comment_background">
+    <Button xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:id="@+id/close_button"
+        app:backgroundTint="@null"
+        android:background="@drawable/close_button"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/NoBorderTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        app:boxStrokeWidth="0dp"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="400"
+        app:counterTextColor="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/comment_input_field"
+            style="@style/NoBorderTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="10"
+            android:maxHeight="300dp"
+            android:hint="Leave your comment...."
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textColor="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:id="@+id/upload_comment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E48514"
+        android:textSize="15sp"
+        app:backgroundTint="@null"
+        android:background="@drawable/round_button"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="5dp"
+        android:layout_marginVertical="16dp"
+        android:text="Upload"
+        />
+
+</LinearLayout>
